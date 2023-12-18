@@ -10,10 +10,105 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 15px 40px;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
+.btl {
+    border: 2px solid yellow;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right img {
+    width: "50"; 
+    height: "50";
+}
+
+.header-right h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: black;
+    gap: 30px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btl-1 {
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 7px 17px;
+}
+
+.btl-2 {
+    background-color: purple;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 9px 15px;
+}
+
+main {
+    background-color: #FFF5EE;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px;
+}
+main div {
+    width: 50%;
+}
+
+main h1 {
+    font-size: 80px;
+    font-weight: 750;
+    line-height: 1.5;
+}
+
+main p {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btl-3 {
+    background-color: purple;
+    border: 1.5px solid black;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 20px 28px;  
+}
+
+.btl-4 {
+    background-color: whitesmoke;
+    border: 1.5px solid purple;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 20px 28px;  
+}
