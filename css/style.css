@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Public Sans', sans-serif;
 }
+body {
+    background-color: #FFF5EE; ;
+}
 
 nav {
     background-color:white;
@@ -73,17 +76,22 @@ a {
 }
 
 main {
-    background-color: #FFF5EE;
     display: flex;
     justify-content: space-between;
     padding: 60px 60px;
+    align-items: center;
 }
-main div {
+
+main img {
     width: 50%;
 }
 
+main div {
+    width: 42%;
+}
+
 main h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 750;
     line-height: 1.5;
 }
@@ -111,4 +119,66 @@ main p {
     font-size: 15px;
     font-weight: 200;
     padding: 20px 28px;  
+}
+
+@media  screen and (max-width: 992px) {
+   .header-left {
+    display: none;
+   }
+
+   main div {
+    width: 50%;
+   }
+
+   main img {
+    width: 40%;
+   }
+
+   main h1 {
+    font-size: 40px;
+   }
+
+   main p {
+    font-size: 16px;
+   }
+
+   .main-btl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+   }
+    
+}
+
+@media  screen and (max-width: 768px) {
+.header-right h1 {
+    font-size: 20px;
+}
+
+.header-right img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    padding: 60px 40px;
+}
+}
+
+@media  screen and (max-width: 576px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main img {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    main div {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+    }
 }
