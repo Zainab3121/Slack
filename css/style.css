@@ -16,6 +16,10 @@ nav {
     padding: 15px 40px;
 }
 
+.toggle {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -167,6 +171,30 @@ main {
 }
 
 @media  screen and (max-width: 576px) {
+    nav ul {
+        position: fixed;
+        background-color: white;
+        flex-direction: column;
+        left: 50%;
+        top: -35%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        padding: 25px 0px;
+        transition: 0.5s;
+        border: 1px solid grey;
+        border-radius: 7px;
+    }
+    
+    .toggle {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .ri-close-fill {
+        display: none;
+    }
+    
     main {
         flex-direction: column-reverse;
     }
